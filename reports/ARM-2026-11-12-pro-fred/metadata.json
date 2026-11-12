@@ -1,0 +1,45 @@
+{
+  "ticker": "ARM",
+  "analysis_date": "2026-11-12",
+  "framework": "TradingAgents",
+  "framework_url": "https://github.com/TauricResearch/TradingAgents",
+  "model_rating": "Underweight",
+  "exported_utc": "2026-11-12T19:55:08.270271+00:00",
+  "run_settings": {
+    "version": "0.7.1",
+    "llm_provider": "openrouter",
+    "deep_think_provider": "openrouter",
+    "deep_think_llm": "deepseek/deepseek-v4-pro",
+    "quick_think_provider": "openrouter",
+    "quick_think_llm": "deepseek/deepseek-v4-pro",
+    "analysts": [
+      "market",
+      "news",
+      "fundamentals"
+    ],
+    "max_debate_rounds": 1,
+    "max_risk_discuss_rounds": 1,
+    "output_language": "English",
+    "data_vendors": {
+      "core_stock_apis": "yfinance",
+      "technical_indicators": "yfinance",
+      "fundamental_data": "sec_edgar,yfinance",
+      "news_data": "yfinance",
+      "macro_data": "fred",
+      "prediction_markets": "polymarket"
+    },
+    "tool_vendors": {}
+  },
+  "max_tokens_per_response": 16384,
+  "fred_enabled": true,
+  "isolated_memory": true,
+  "market_session": "intraday; current daily bar provisional",
+  "completed_model_calls": 16,
+  "token_usage": {
+    "prompt_tokens": 143716,
+    "completion_tokens": 43572,
+    "total_tokens": 187288
+  },
+  "upstream_commit": "9fa1196fffbcfd9de5146d2dd2869df84ab99838",
+  "review_status": "material caveats remain"
+}
